@@ -4,10 +4,10 @@ let doorImage2 = document.getElementById('door2');
 let doorImage3 = document.getElementById('door3');
 let startButton = document.getElementById('start');
 
-let botDoorPath = 'img/robot.svg';
-let beachDoorPath = 'img/beach.svg';
-let spaceDoorPath = 'img/space.svg';
-let closedDoorPath = 'img/closed_door.svg';
+let botDoorPath = 'https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/robot.svg';
+let beachDoorPath = 'https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/beach.svg';
+let spaceDoorPath = 'https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/space.svg';
+let closedDoorPath = 'https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg';
 
 let numClosedDoors = 3;
 let currentlyPlaying = true;
@@ -90,7 +90,7 @@ const startRound = () => {
 
 startButton.onclick = () => {
   if(currentlyPlaying === false) {
-  	startRound();
+    startRound();
   }
 };
 
